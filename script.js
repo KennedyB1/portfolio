@@ -100,3 +100,8 @@ function swapImage() {
 }
 
 setInterval(swapImage, 3000);
+
+
+//////////////////////////////
+
+const content = [{namn:"", språk:"", kategorie:"", bild:"", information:""}, {namn:"", språk:"", kategorie:"", bild:"", information:""}]

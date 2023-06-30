@@ -51,22 +51,46 @@ border: 5px solid white;
 }
 
 .pageMain {
-background-color:rgb(221, 255, 0);
+/*background-color:rgb(221, 255, 0);*/
+background-color: white;
 border: 5px solid rgb(0, 208, 255);
 }
 
   /* Create the 2-grid system */
   .container {
-    display: flex;
+    /*display: flex; */
     height: 100%;
   }
   
   /* Set the width of each grid to be 50% */
   .grid {
-    width: 50%;
+    /*width: 50%;*/
     text-align: center;
   }
+  .contact{
+    width: 100vw;
+    border-top: 2px solid black;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+  .logo{
+    
+  }
+  .all-donuts {
+    text-align: center;
+    padding: 20px;
+}
 
+.donut {
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    background-color: lightgray;
+    display: inline-block;
+    margin-right: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    font-size: 24px;
+}
      /* Create the 3x2 grid system */
      .containerCell {
       display: grid;
