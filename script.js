@@ -104,4 +104,25 @@ setInterval(swapImage, 3000);
 
 //////////////////////////////
 
-const content = [{namn:"", språk:"", kategorie:"", bild:"", information:""}, {namn:"", språk:"", kategorie:"", bild:"", information:""}]
+function expandContent(element) {
+    const expandedContent = document.createElement('div');
+    expandedContent.classList.add('expanded-content');
+    expandedContent.innerHTML = `
+        <div class="content">
+            ${element.innerHTML}
+            <div class="close-button" onclick="closeExpandedContent()">
+                &#10006;
+            </div>
+        </div>
+    `;
+    document.body.appendChild(expandedContent);
+}
+
+function closeExpandedContent() {
+    const expandedContent = document.querySelector('.expanded-content');
+    expandedContent.remove();
+}
+
+
+///////////////////
+// const content = [{namn:"", språk:"", kategorie:"", bild:"", information:""}, {namn:"", språk:"", kategorie:"", bild:"", information:""}]
