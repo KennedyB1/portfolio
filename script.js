@@ -109,19 +109,30 @@ function expandContent(element) {
     expandedContent.classList.add('expanded-content');
     expandedContent.innerHTML = `
         <div class="content">
-            ${element.innerHTML}
+            ${element.querySelector('.content-pop').innerHTML}
             <div class="close-button" onclick="closeExpandedContent()">
                 &#10006;
             </div>
         </div>
     `;
     document.body.appendChild(expandedContent);
+
+    // Hide the content-home element in the expanded content
+    const contentHome = expandedContent.querySelector('.content-home');
+    contentHome.classList.add('hidden');
 }
+
 
 function closeExpandedContent() {
     const expandedContent = document.querySelector('.expanded-content');
     expandedContent.remove();
+
+    // Show the content-home element
+    const contentHome = document.querySelector('.content-home');
+    contentHome.classList.remove('hidden');
 }
+
+
 
 
 ///////////////////
