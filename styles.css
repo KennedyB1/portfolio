@@ -33,7 +33,7 @@ html, body {
   width: 40px;
   height: 40px;
   background-color: #000000;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 50%;
 }
 .top-left {
@@ -153,6 +153,8 @@ border: 5px solid rgb(0, 208, 255);
   .hidden {
     display: none;
 }
+
+
 
  
   

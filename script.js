@@ -22,6 +22,9 @@ function initComparisons() {
         /*position the slider in the middle:*/
         slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
         slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+        
+        
+        
         /*execute a function when the mouse button is pressed:*/
         slider.addEventListener("mousedown", slideReady);
         /*and another function when the mouse button is released:*/
