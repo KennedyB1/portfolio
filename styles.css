@@ -240,6 +240,26 @@ h1{
 width: 25vw;
 }
 
+.styled-list {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.styled-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
+}
+
+.styled-list li span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+
+
 
  
   
