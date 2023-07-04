@@ -189,14 +189,15 @@ border: 5px solid green;
 }
   
   .expanded-content .content {
-      width: 80%;
-      height: 80%;
+      width: 90%;
+      height: 90%;
       background-color: lightgray;
       display: flex;
       flex-direction: column;
       align-items: center;
       color: black;
       overflow-y: auto;
+      border-radius: 20px 0 0 20px;
   }
   
   .close-button {
@@ -217,6 +218,16 @@ border: 5px solid green;
 h1{
    color: white;
     margin-left: 50%;
+}
+
+
+.content-image{
+  width: 50vw;
+  border: 5px solid;
+}
+
+.content-pop-full{
+  text-align: center;
 }
 
 
