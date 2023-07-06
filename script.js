@@ -22,9 +22,9 @@ function initComparisons() {
         /*position the slider in the middle:*/
         slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
         slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-        
-        
-        
+
+
+
         /*execute a function when the mouse button is pressed:*/
         slider.addEventListener("mousedown", slideReady);
         /*and another function when the mouse button is released:*/
@@ -83,23 +83,23 @@ var images = ["Logo/2.png", "Logo/3.png", "Logo/4.png", "Logo/5.png", "Logo/6.pn
 var counter = 0;
 
 function swapImage() {
-  var img = document.getElementById("myImage");
+    var img = document.getElementById("myImage");
 
-  // Fade-out effect
-  img.style.opacity = 0;
+    // Fade-out effect
+    img.style.opacity = 0;
 
-  setTimeout(function() {
-    // Change the image source after fade-out
-    img.src = images[counter];
+    setTimeout(function () {
+        // Change the image source after fade-out
+        img.src = images[counter];
 
-    // Fade-in effect
-    img.style.opacity = 1;
-  }, 500); // Wait for 0.5 seconds (duration of fade-out transition)
+        // Fade-in effect
+        img.style.opacity = 1;
+    }, 500); // Wait for 0.5 seconds (duration of fade-out transition)
 
-  counter++;
-  if (counter >= images.length) {
-    counter = 0;
-  }
+    counter++;
+    if (counter >= images.length) {
+        counter = 0;
+    }
 }
 
 setInterval(swapImage, 3000);
@@ -140,3 +140,20 @@ function closeExpandedContent() {
 
 ///////////////////
 // const content = [{namn:"", språk:"", kategorie:"", bild:"", information:""}, {namn:"", språk:"", kategorie:"", bild:"", information:""}]
+
+
+
+
+/////////////////////////////
+
+function copyEmail() {
+    var email = 'vindahl.simon@gmail.com'; // Replace with your email address
+    navigator.clipboard.writeText(email);
+    var icon = document.createElement('span');
+    icon.className = 'copied-icon';
+    icon.textContent = 'Copied!';
+    document.getElementById('email').appendChild(icon);
+    setTimeout(function () {
+        icon.remove();
+    }, 2000);
+}

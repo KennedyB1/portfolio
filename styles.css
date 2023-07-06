@@ -152,6 +152,7 @@ border: 5px solid green;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
       height: 100%;
+      justify-items: center;
     }
     
   
@@ -289,6 +290,33 @@ height: 100%;
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+
+.copied-icon {
+  margin-left: 5px;
+  color: green;
+}
+
+#email, #phone{
+  cursor: copy;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: inherit;
+}
+
+.contact h2{
+  text-align: center;
+}
+
+
 
 
 
