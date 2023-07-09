@@ -160,6 +160,10 @@ background: white;
       align-items: center;
       justify-content: center;
       font-size: 24px;
+      border: 2px solid cadetblue;
+width: 20vw;
+border-radius: 15px;
+margin-bottom: 5px;
     }
 
     #myImage {
@@ -313,6 +317,9 @@ a:focus {
   text-align: center;
   display: grid;
 grid-template-columns: repeat(3, 1fr);
+color: black;
+margin: 5px;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .grid-portfolio{
