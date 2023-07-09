@@ -46,15 +46,13 @@ html, body {
 .page{
 width:100vw;
 height: 100vh;
-background-color:green;
-border: 5px solid white;
+background: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);;
 
 }
 
 .pageMain {
 /*background-color:rgb(221, 255, 0);*/
-background-color: white;
-border: 5px solid green;
+background: white;
 }
 
   /* Create the 2-grid system */
@@ -313,6 +311,18 @@ a:focus {
 
 .contact h2{
   text-align: center;
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-portfolio{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-portfolio h1{
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  grid-column: 3;
 }
 
 
