@@ -34,7 +34,7 @@ html, body {
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  background-color: #b47706;
+  background-color: orange;
   border-radius: 50%;
 }
 .top-left {
