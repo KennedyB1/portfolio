@@ -210,6 +210,7 @@ background: white;
       color: white;
       overflow-y: auto;
       border: 2px solid white;
+      margin: 0;
   }
   
   .close-button {
