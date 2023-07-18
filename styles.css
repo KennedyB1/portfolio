@@ -234,19 +234,27 @@ h1{
 
 
 .content-image{
-  width: 90%;
-  height: 50vh;
+  max-width: 70%;
   border: 5px solid white;
 }
 
 .content-pop-full{
   text-align: center;
 }
+.content-pop-full h2{
+  margin: 0;
+}
 
 .content-images-3{
   justify-items: center;
   display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.content-images-2{
+  justify-items: center;
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .images-row{
