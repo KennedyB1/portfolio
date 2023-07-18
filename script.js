@@ -79,7 +79,7 @@ function initComparisons() {
 }
 
 // Array of image file names
-var images = ["Logo/2.png", "Logo/3.png", "Logo/4.png", "Logo/5.png", "Logo/6.png", "Logo/7.png", "Logo/8.png"];
+var images = ["Logo/1.png", "Logo/2.png", "Logo/3.png", "Logo/4.png", "Logo/5.png", "Logo/6.png", "Logo/7.png"];
 var counter = 0;
 
 function swapImage() {
