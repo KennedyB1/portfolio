@@ -235,6 +235,7 @@ h1{
 
 .content-image{
   max-width: 70%;
+  height: 50vh;
   border: 5px solid white;
 }
 
