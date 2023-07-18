@@ -74,6 +74,16 @@ background: white;
     bottom: 0;
     margin-bottom: 10px;
   }
+  .contact-header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-header h2{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    grid-column: 1;
+    text-align: right;
+  }
   
   .all-content {
     text-align: center;
@@ -122,8 +132,7 @@ background: white;
   overflow: hidden;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-right: 20px; 
-    margin-bottom: 20px; 
+  margin-right: 10px; 
 }
 
 
@@ -345,14 +354,7 @@ a:focus {
   color: inherit;
 }
 
-.contact h2{
-  text-align: center;
-  display: grid;
-grid-template-columns: repeat(3, 1fr);
-color: black;
-margin: 5px;
-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
+
 
 .grid-portfolio{
   display: grid;
