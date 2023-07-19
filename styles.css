@@ -253,6 +253,7 @@ background: white;
 
 h1{
    color: white;
+   font-size: 3vw;
 }
 
 
@@ -404,6 +405,39 @@ position: sticky;
     height: 54.67px;
 }
 
+
+
+@media (max-width: 930px)
+{
+
+  .grid-portfolio{
+
+    position: static;
+  }
+
+.all-content{
+  height: auto;
+}
+
+.content{
+
+
+  margin-bottom: 10px;
+
+}
+
+h1{
+  font-size: 2em;
+}
+}
+
+@media (max-width: 595px){
+  .content{
+    margin-right: 0;
+
+  }
+
+}
 
 
 
