@@ -1,51 +1,51 @@
-* {box-sizing: border-box;}
-body{
-    background-color: black;
-     
-    
+* {
+  box-sizing: border-box;
 }
-html, body {
+body {
+  background-color: black;
+}
+html,
+body {
   height: 100% !important;
-    width: 100% !important;
-    margin: 0 !important;
-    overflow: hidden;
-    font-family: Georgia, serif;  
+  width: 100% !important;
+  margin: 0 !important;
+  overflow: hidden;
+  font-family: Georgia, serif;
 }
- /*
+/*
 .img-comp-container {
   position: relative;
   height: 100vh; 
-}  *//*should be the same height as the images*/
+}  */ /*should be the same height as the images*/
 
 .img-comp-img {
   position: absolute;
   width: auto;
   height: auto;
-  overflow:hidden;
+  overflow: hidden;
   max-width: 100vw;
   z-index: 1;
 }
 
-
-
 .img-comp-slider {
   position: absolute;
-  z-index:9;
+  z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgb(6,250,41);
-  background: linear-gradient(90deg, rgb(12, 153, 33) 50%, rgba(255,255,255,1) 50%);
-  border: 2px solid ;
+  background: rgb(6, 250, 41);
+  background: linear-gradient(
+    90deg,
+    rgb(12, 153, 33) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  border: 2px solid;
 }
 
-.img-comp-slider:active{
-
+.img-comp-slider:active {
   background: orange;
-  
-
 }
 .top-left {
   position: absolute;
@@ -53,62 +53,60 @@ html, body {
   left: 16px;
   z-index: 99999999999999990;
 }
-.page{
-width:100vw;
-height: 100vh;
-background: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);;
-
+.page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
 }
 
 .pageMain {
-/*background-color:rgb(221, 255, 0);*/
-background: white;
+  /*background-color:rgb(221, 255, 0);*/
+  background: white;
 }
 
-  /* Create the 2-grid system */
-  .container {
-    /*display: flex; */
-    height: 100%;
-    overflow: auto;
-  }
-  
-  /* Set the width of each grid to be 50% */
-  .grid {
-    /*width: 50%;*/
-    text-align: center;
-  }
-  .contact{
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-  }
-  .contact-header{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .contact-header h2{
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    grid-column: 1;
-    text-align: right;
-  }
-  
-  .all-content {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1500px;
-    /*
+/* Create the 2-grid system */
+.container {
+  /*display: flex; */
+  height: 100%;
+  overflow: auto;
+}
+
+/* Set the width of each grid to be 50% */
+.grid {
+  /*width: 50%;*/
+  text-align: center;
+}
+.contact {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+.contact-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-header h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  grid-column: 1;
+  text-align: right;
+}
+
+.all-content {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  /*
     Om man inte vill ha den centrerad
     */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 /*
@@ -127,7 +125,7 @@ background: white;
 .content {
   width: 300px;
   height: 200px;
-  
+
   background-color: #212e25;
   color: #fff;
   border: none;
@@ -140,9 +138,8 @@ background: white;
   overflow: hidden;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
-
 
 .content:before {
   position: absolute;
@@ -156,148 +153,133 @@ background: white;
   transition: opacity 0.3s ease;
 }
 
-
 .content:hover {
   background: linear-gradient(135deg, #00eaff, #0088ff);
   color: black;
-  
 }
 
 .content:hover:before {
   opacity: 1;
 }
 
+/* Create the 3x2 grid system */
+.containerCell {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+  justify-items: center;
+}
 
+.overrow {
+  margin-bottom: 50px;
+}
 
+/* Add some content to the cells */
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: 2px solid cadetblue;
+  width: 20vw;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
+.cell:hover {
+  background-color: cadetblue;
+  color: white;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
 
+#myImage {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  max-width: 100%;
+  max-height: 100%;
+}
 
+.expanded-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
 
-     /* Create the 3x2 grid system */
-     .containerCell {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      height: 100%;
-      justify-items: center;
-    }
-    
-
-    .overrow{
-
-      margin-bottom: 50px;
-    }
-  
-    
-    /* Add some content to the cells */
-    .cell {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      border: 2px solid cadetblue;
-      width: 20vw;
-      border-radius: 15px;
-      margin-bottom: 5%;
-      transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    }
-    
-    .cell:hover {
-      background-color: cadetblue;
-      color: white;
-      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
-    }
-
-    #myImage {
-      transition: opacity 0.5s ease;
-      opacity: 1;
-      max-width: 100%; 
-      max-height: 100%;
-    }
-      
-    
-    .expanded-content {
-      position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
-  }
-
-  .expanded-content:hover .content {
-   
+.expanded-content:hover .content {
   background: #212e25;
   cursor: default;
-
-}
-  
-  .expanded-content .content {
-      width: 90%;
-      height: 90%;
-      background-color: #212e25;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: white;
-      overflow-y: auto;
-      border: 2px solid white;
-      margin: 0;
-  }
-  
-  .close-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-      color: white;
-      font-size: 20px;
-      border-radius: 15px;
-  }
-
-  .hidden {
-    display: none;
 }
 
-h1{
-   color: white;
-   font-size: 3vw;
+.expanded-content .content {
+  width: 90%;
+  height: 90%;
+  background-color: #212e25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  overflow-y: auto;
+  border: 2px solid white;
+  margin: 0;
 }
 
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+}
 
-.content-image{
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: white;
+  font-size: 3vw;
+}
+
+.content-image {
   max-width: 70%;
   max-height: 50vh;
   border: 5px solid white;
 }
 
-.content-pop-full{
+.content-pop-full {
   text-align: center;
 }
-.content-pop-full h2{
+.content-pop-full h2 {
   margin-top: 0;
 }
 
-.content-images-3{
+.content-images-3 {
   justify-items: center;
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.content-images-2{
+.content-images-2 {
   justify-items: center;
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.images-row{
-width: 25vw;
-height: 100%;
+.images-row {
+  width: 25vw;
+  height: 100%;
 }
 
 .styled-list {
@@ -319,13 +301,11 @@ height: 100%;
   margin-right: 5px;
 }
 
-.content-text{
+.content-text {
   width: 70%;
   display: inline-grid;
   text-align: -webkit-left;
-
 }
-
 
 ::-webkit-scrollbar {
   width: auto;
@@ -333,26 +313,26 @@ height: 100%;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:transparent; 
+  background: transparent;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: gray; 
+  background: gray;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
-
 
 .copied-icon {
   margin-left: 5px;
   color: rgb(0, 0, 0);
 }
 
-#email, #phone{
+#email,
+#phone {
   cursor: copy;
 }
 
@@ -367,99 +347,77 @@ a:focus {
   color: inherit;
 }
 
-
-
-.grid-portfolio{
+.grid-portfolio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /*
   Om man vill ha tillbaka
   */
   position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.grid-portfolio h1{
+.grid-portfolio h1 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   grid-column: 2;
   margin-right: auto;
 }
 
-.logo{
-  width:100%;
+.logo {
+  width: 100%;
   height: 50vh;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.studier{
-
+.studier {
   z-index: 99;
-position: sticky;
-font-size: 1.3rem;
+  position: sticky;
+  font-size: 1.3rem;
 }
 
-.content-center{
-
+.content-center {
   display: flex;
   place-content: center;
   height: 100%;
 }
 
-.content-home{
+.content-home {
   align-self: center;
 }
 
-.content-home-text{
+.content-home-text {
   width: 252px;
-    height: 54.67px;
+  height: 54.67px;
 }
 
-
-
-@media (max-width: 930px)
-{
-
-  .grid-portfolio{
-
+@media (max-width: 930px) {
+  .grid-portfolio {
     position: static;
   }
 
-.all-content{
-  height: auto;
-}
-
-.content{
-
-
-  margin-bottom: 10px;
-
-}
-
-h1{
-  font-size: 2em;
-}
-}
-
-@media (max-width: 595px){
-  .content{
-    margin-right: 0;
-
+  .all-content {
+    height: auto;
   }
 
-  .cell{
+  .content {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 595px) {
+  .content {
+    margin-right: 0;
+  }
+
+  .cell {
     width: 30vw;
   }
-
 }
-
-
-
-
-
-
- 
-  
