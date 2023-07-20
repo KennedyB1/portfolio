@@ -64,11 +64,15 @@ body {
   background: white;
 }
 
-/* Create the 2-grid system */
+
 .container {
-  /*display: flex; */
+  
   height: 100%;
   overflow: auto;
+}
+
+.container-left{
+  height: 100vh;
 }
 
 /* Set the width of each grid to be 50% */
