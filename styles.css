@@ -405,6 +405,7 @@ a:focus {
 
   .all-content {
     height: auto;
+    width: auto;
   }
 
   .content {
