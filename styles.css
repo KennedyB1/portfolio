@@ -387,6 +387,7 @@ a:focus {
 
   z-index: 99;
 position: sticky;
+font-size: 1.3rem;
 }
 
 .content-center{
