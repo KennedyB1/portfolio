@@ -20,7 +20,7 @@ function initComparisons() {
         /*insert slider*/
         img.parentElement.insertBefore(slider, img);
         /*position the slider in the middle:*/
-        slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+        slider.style.top = '50%'
         slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
 
 
