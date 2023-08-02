@@ -32,8 +32,8 @@ body {
   z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: rgb(6, 250, 41);
   background: linear-gradient(
@@ -158,8 +158,8 @@ body {
 }
 
 .content:hover {
-  background: linear-gradient(135deg, #00eaff, #0088ff);
-  color: black;
+ /* background: linear-gradient(135deg, #00eaff, #0088ff);*/
+ background-color: black;
 }
 
 .content:hover:before {
@@ -306,9 +306,9 @@ h1 {
 }
 
 .content-text {
-  width: 70%;
+  width: 90%;
   display: inline-grid;
-  text-align: -webkit-left;
+  text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -367,6 +367,7 @@ a:focus {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   grid-column: 2;
   margin-right: auto;
+  color: black;
 }
 
 .logo {
@@ -398,7 +399,7 @@ a:focus {
   height: 54.67px;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1240px) {
   .grid-portfolio {
     position: static;
   }
@@ -406,6 +407,7 @@ a:focus {
   .all-content {
     height: auto;
     width: auto;
+    max-width: 929px;
   }
 
   .content {
@@ -415,6 +417,7 @@ a:focus {
   h1 {
     font-size: 2em;
   }
+ 
 }
 
 @media (max-width: 595px) {
@@ -426,3 +429,6 @@ a:focus {
     width: 30vw;
   }
 }
+
+
+/*1240*/
