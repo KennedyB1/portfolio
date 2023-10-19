@@ -256,9 +256,9 @@ h1 {
 }
 
 .content-image {
-  max-width: 70%;
+  width: 50vw;
   max-height: 50vh;
-  border: 5px solid white;
+  border: 1px solid white;
 }
 
 .content-pop-full {
@@ -281,7 +281,7 @@ h1 {
 }
 
 .images-row {
-  width: 25vw;
+  width: 25vw !important;
   height: 100%;
 }
 
@@ -289,13 +289,16 @@ h1 {
   list-style-type: none;
   display: inline-block;
   margin: 0px;
-  border-bottom: 1px solid white;
+  width: 40vw;
+  padding: 0;
 }
 
 .styled-list li {
   margin-bottom: 5px;
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
 }
 
 .styled-list li span {
@@ -415,6 +418,12 @@ a:focus {
 
   h1 {
     font-size: 2em;
+  }
+  .content-image {
+    width: 70vw;
+  }
+  .styled-list {
+    width: 60vw;
   }
 }
 
