@@ -497,9 +497,19 @@
                                             <span class="list-detail">React</span>
                                         </li>
                                     </ul>
-
+                                    <h3>Uppgift</h3>
                                     <p class="content-text">
+                                        I mitt grupparbete inom ramen för Javascript-kursen, hade vi en tre veckors
+                                        uppgift där vi skulle utveckla en applikation baserad på Arbetsförmedlingens
+                                        öppna data. Uppgiften bestod i att skapa en plattform som kunde matcha
+                                        relaterade yrken för olika utbildningar. Genom att använda utbildningstitel och
+                                        utbildningsbeskrivning som inmatning skulle applikationen lista de yrken som var
+                                        kopplade till den specifika utbildningen. Dessutom var vi tvungna att möjliggöra
+                                        för användarna att hämta information om de vanligaste kompetenserna som
+                                        arbetsgivare efterfrågar för det valda yrket. Vi genomförde uppgiften som ett
+                                        grupparbete och följde Arbetsförmedlingens designsystem i utvecklingsprocessen.
                                     </p>
+
                                 </div>
                             </div>
                         </div>
@@ -520,8 +530,7 @@
                                     <ul class="styled-list">
                                         <li>
                                             <span class="list-label">Publicerad:</span>
-                                            <span class="list-detail"><a
-                                                    href="https://github.com/KennedyB1/Arbetsformedlingen-Case"
+                                            <span class="list-detail"><a href="https://github.com/KennedyB1/Gridmaster"
                                                     target="_blank" rel="noopener noreferrer">Github</a></span>
                                         </li>
                                         <li>
@@ -538,48 +547,39 @@
                                     <h3>Bakgrund</h3>
                                     <p class="content-text">
 
-                                        Som en uppgift i kursen API-utveckling, Medieinstitutet 2023, skulle vi ta fram
-                                        en
-                                        applikation för att färglägga online. Kriterier var att färgläggningen skulle
-                                        ske i
-                                        realtid mellan samtliga inloggade i applikationen, minst 4 st, och att varje
-                                        användare får en färg och målar med den färgen. Färgning skall ske i ett rutnät
-                                        med
-                                        minst 15 kolumner och 15 rader, och bild skall kunna sparas och öppnas igen. Det
-                                        skulle också finnas en chat så att de 4 användare som färgar även kan chatta med
-                                        varandra.
+                                        Som en uppgift i kursen API-utveckling skulle vi skapa en realtidsapplikation
+                                        för färgläggning online.
+                                        Uppgiften var att möjliggöra att minst fyra användare kunde färglägga i realtid
+                                        på samma plattform. Varje användare tilldelas en unik färg och kan delta i
+                                        chattkonversationer med andra inloggade användare.
+
+
                                     </p>
                                     <h3>Detaljer</h3>
                                     <p class="content-text">
-                                        En användare loggar in, blir tilldelad en random färg, och kan börja chatta
-                                        direkt
-                                        med alla som är inloggade.
+                                        När en användare loggar in tilldelas de automatiskt en slumpmässig färg och kan
+                                        omedelbart börja chatta med andra inloggade användare. Användarnamnet skickas
+                                        till servern, där ett användarobjekt skapas och returneras till klienten. Detta
+                                        objekt sparas i sessionens lagring och är tillgängligt även när användaren
+                                        lämnar och återvänder till applikationen. Chattens textfärg anpassas dynamiskt
+                                        baserat på den slumpmässiga färg som användaren tilldelats.
 
-                                        Användarnamnet skickas till Server och ett userObjekt skapas, som sedan skickas
-                                        tillbaka till klienten och sparas i sessionStorage, resan när användaren lämnar.
-                                        Dynamisk textfärg i chatten beroende på den random färg användaren tilldelats.
+                                        För att börja färglägga skapar användaren enkelt ett nytt rum. Här har du
+                                        möjlighet att måla tillsammans med andra användare som har samma färg som du.
+                                        Antalet deltagare i varje rum kan anpassas från serversidan för att passa olika
+                                        grupper och spelinställningar. Vårt mål var att göra hela projektet skalbart, så
+                                        det fungerar lika smidigt för både erfarna användare och nybörjare.
 
-                                        För att spela så skapar användaren ett rum. Här kan du måla med alla andra
-                                        inloggade
-                                        med den färgen du blivit tilldelad, och där antal användare i rummet går att
-                                        bestämma på serversidan. Vi ville att hela projektet skulle vara skalbar, från
-                                        hårdkokade användare till att vi enkelt skulle kunna begära rum till bestämda
-                                        antal
-                                        likväl för öppet för alla.
+                                        I applikationens nuvarande version kan du också spara dina konstverk. När du
+                                        lämnar ett rum kan du enkelt gå till "Sparade Bilder" i huvudmenyn och titta på
+                                        dina tidigare skapelser.
 
-                                        I detta läget i appen kan du även spara din bild som du även kan kika på genom
-                                        att
-                                        gå ut ur rummet och kolla Saved Images i Headern.
-
-                                        För att spela spel med andra på tid kan du skapa ett rum, och därefter SPELA. du
-                                        får
-                                        se en referensbild, där denna genereras av antalet användare och färger i
-                                        rummet,
-                                        och där du/ni sen på den tid som anges ska färga grid enligt referensen. När
-                                        tiden
-                                        är slut meddelas användaren/användarna ett score och du kan därefter gå ur
-                                        rummet,
-                                        och sen se din plats på vår highscore.
+                                        För de som gillar tävlingsmomentet har vi också inkluderat möjligheten att delta
+                                        i tidsbegränsade spelrum. När du skapar ett sådant rum får du och andra
+                                        deltagare en referensbild. Antalet användare och färger i rummet påverkar denna
+                                        bild. Under den angivna tiden målar du rutnätet enligt referensbilden. När tiden
+                                        är ute presenteras ditt poäng och du kan se din placering på vår
+                                        highscore-lista.
                                     </p>
                                 </div>
                             </div>
