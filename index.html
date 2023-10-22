@@ -503,6 +503,87 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="content" onclick="expandContent(this)">
+                            <div class="content-center">
+                                <div class="content-home">
+                                    <p>Skolprojekt</p>
+                                    <p class="content-home-text">Gridmaster Canvas</p>
+                                </div>
+                            </div>
+
+                            <div class="content-pop hidden">
+                                <div class="content-pop-full">
+                                    <h2>Gridmaster Canvas</h2>
+                                    <p>
+                                        <img class="content-image" src="./gridmaster/gmc.gif" alt="Spelomgång">
+                                    </p>
+                                    <ul class="styled-list">
+                                        <li>
+                                            <span class="list-label">Publicerad:</span>
+                                            <span class="list-detail"><a
+                                                    href="https://github.com/KennedyB1/Arbetsformedlingen-Case"
+                                                    target="_blank" rel="noopener noreferrer">Github</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="list-label">Applikation:</span>
+                                            <span class="list-detail"><a
+                                                    href="https://glistening-tapioca-e79f13.netlify.app/"
+                                                    target="_blank">Webbplats</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="list-label">Teknik:</span>
+                                            <span class="list-detail">Javascript, Socket.io</span>
+                                        </li>
+                                    </ul>
+                                    <h3>Bakgrund</h3>
+                                    <p class="content-text">
+
+                                        Som en uppgift i kursen API-utveckling, Medieinstitutet 2023, skulle vi ta fram
+                                        en
+                                        applikation för att färglägga online. Kriterier var att färgläggningen skulle
+                                        ske i
+                                        realtid mellan samtliga inloggade i applikationen, minst 4 st, och att varje
+                                        användare får en färg och målar med den färgen. Färgning skall ske i ett rutnät
+                                        med
+                                        minst 15 kolumner och 15 rader, och bild skall kunna sparas och öppnas igen. Det
+                                        skulle också finnas en chat så att de 4 användare som färgar även kan chatta med
+                                        varandra.
+                                    </p>
+                                    <h3>Detaljer</h3>
+                                    <p class="content-text">
+                                        En användare loggar in, blir tilldelad en random färg, och kan börja chatta
+                                        direkt
+                                        med alla som är inloggade.
+
+                                        Användarnamnet skickas till Server och ett userObjekt skapas, som sedan skickas
+                                        tillbaka till klienten och sparas i sessionStorage, resan när användaren lämnar.
+                                        Dynamisk textfärg i chatten beroende på den random färg användaren tilldelats.
+
+                                        För att spela så skapar användaren ett rum. Här kan du måla med alla andra
+                                        inloggade
+                                        med den färgen du blivit tilldelad, och där antal användare i rummet går att
+                                        bestämma på serversidan. Vi ville att hela projektet skulle vara skalbar, från
+                                        hårdkokade användare till att vi enkelt skulle kunna begära rum till bestämda
+                                        antal
+                                        likväl för öppet för alla.
+
+                                        I detta läget i appen kan du även spara din bild som du även kan kika på genom
+                                        att
+                                        gå ut ur rummet och kolla Saved Images i Headern.
+
+                                        För att spela spel med andra på tid kan du skapa ett rum, och därefter SPELA. du
+                                        får
+                                        se en referensbild, där denna genereras av antalet användare och färger i
+                                        rummet,
+                                        och där du/ni sen på den tid som anges ska färga grid enligt referensen. När
+                                        tiden
+                                        är slut meddelas användaren/användarna ett score och du kan därefter gå ur
+                                        rummet,
+                                        och sen se din plats på vår highscore.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

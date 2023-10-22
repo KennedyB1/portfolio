@@ -304,6 +304,8 @@ h1 {
   width: 50vw;
   display: inline-grid;
   text-align: left;
+  margin: 0;
+  line-height: 1.3em;
 }
 
 ::-webkit-scrollbar {
@@ -436,6 +438,7 @@ a:focus {
   .content-pop-full {
     font-size: 0.65em;
   }
+  .content-text {
+    line-height: 1.7em;
+  }
 }
-
-/*1240*/
