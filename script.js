@@ -120,10 +120,14 @@ function expandContent(element) {
     `;
     document.body.appendChild(expandedContent);
 
-    // Hide the content-home element in the expanded content
     const contentHome = expandedContent.querySelector('.content-home');
-    contentHome.classList.add('hidden');
+
+
+    if (contentHome) {
+        contentHome.classList.add('hidden');
+    }
 }
+
 
 
 function closeExpandedContent() {
