@@ -111,11 +111,12 @@ function expandContent(element) {
     const expandedContent = document.createElement('div');
     expandedContent.classList.add('expanded-content');
     expandedContent.innerHTML = `
-        <div class="content">
-            ${element.querySelector('.content-pop').innerHTML}
-            <div class="close-button" onclick="closeExpandedContent()">
+    <div class="close-button" onclick="closeExpandedContent()">
                 &#10006;
             </div>
+        <div class="content">
+            ${element.querySelector('.content-pop').innerHTML}
+            
         </div>
     `;
     document.body.appendChild(expandedContent);
