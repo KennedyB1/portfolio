@@ -249,24 +249,47 @@
                                     </ul>
                                     <h3>Introduktion</h3>
                                     <p class="content-text">
+                                        I mitten av 2023 släpptes Counter Strike 2 som en efterlängtad uppföljare
+                                        till Counter Strike: Global Offensive. Samtidigt som spelet lanserades,
+                                        uppdaterade Valve, dess utgivare, regelverket för att kvalificera lag till deras
+                                        egna turneringar. <a
+                                            href="https://github.com/ValveSoftware/counter-strike/tree/main/regional_standings#readme"
+                                            target="_blank">Här kan du läsa mer om dessa regler.</a>
 
                                     </p>
 
                                     <h3>Problem</h3>
                                     <p class="content-text">
-
+                                        Det nya rankingssystemet för att bestämma regional rankning har inte välkomnats
+                                        väl av vare sig communityn eller tredjepartsarrangörerna. Många
+                                        tredjepartsarrangörer fortsätter att använda det äldre systemet, eftersom de
+                                        anser att det bättre passar deras turneringsformat.
+                                        <br>
+                                        Dessutom är den rankingdata som Valve tillhandahåller endast tillgänglig på
+                                        deras GitHub-sida. Detta gör det svårt för användare att enkelt komma åt den
+                                        värdefulla rankningsinformationen, då GitHub inte är den naturliga platsen för
+                                        spelare att hämta speldata.
                                     </p>
 
                                     <h3>Lösning</h3>
                                     <p class="content-text">
-
+                                        Lösningen är en användarvänlig webbsida som kan generera och visa rankingen på
+                                        ett tillgängligt och överskådligt sätt, vilket gör
+                                        rankinginformationen mer tillgänglig.
                                     </p>
 
                                     <h3>Hur den funkar</h3>
                                     <p class="content-text">
-
+                                        Då datan ligger i en extern github fil, behövde jag använda mig utav GitHub API
+                                        för att hämta datan.
+                                        <br>
+                                        På hemsidan finns knappar som representerar de olika regionerna. När en knapp
+                                        trycks, anropas det specifika API:et.
+                                        <br>
+                                        Eftersom datan är lagrad i en 'markdown'-fil (.md), valde jag att använda
+                                        npm-paketet 'ReactMarkdown' för att rendera innehållet. Detta underlättar
+                                        arbetet och gör det enklare att anpassa och designa utseendet på innehållet.
                                     </p>
-
                                 </div>
                             </div>
 
