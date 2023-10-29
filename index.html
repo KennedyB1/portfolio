@@ -277,6 +277,78 @@
 
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="content" onclick="expandContent(this)">
+                            <div class="content-center">
+                                <div class="content-home">
+                                    <p>Chrome Extension</p>
+                                    <p class="content-home-text">Twitch bioläge</p>
+                                </div>
+                            </div>
+                            <div class="content-pop hidden">
+                                <div class="content-pop-full">
+                                    <h2>Twitch bioläge</h2>
+                                    <img class="content-image" src="./twitch/chrome-capture-2023-9-28.gif"
+                                        alt="Scrollande överblick när tillläget är aktiverat">
+
+                                    </p>
+                                    <ul class="styled-list">
+                                        <li>
+                                            <span class="list-label">Publicerad:</span>
+                                            <span class="list-detail"><a
+                                                    href="https://github.com/KennedyB1/Chrome-extension-Hltv"
+                                                    target="_blank" rel="noopener noreferrer">Github</a></span>
+                                        </li>
+                                        <li>
+                                            <span class="list-label">Applikation:</span>
+                                            <span class="list-detail">Extension</span>
+                                        </li>
+                                        <li>
+                                            <span class="list-label">Teknik:</span>
+                                            <span class="list-detail">Javascript</span>
+                                        </li>
+                                    </ul>
+                                    <h3>Introduktion</h3>
+                                    <p class="content-text">
+                                        Twitch.tv är en av världens ledande live streaming-plattformar, främst inriktad
+                                        på videospelströmning. Här finns en chatt där tittarna kan kommuncera i
+                                        realtid.
+                                    </p>
+
+                                    <h3>Problem</h3>
+                                    <p class="content-text">
+                                        En användare som ansluter till en stream, vet oftast redan vem denna är och
+                                        behöver inte läsa streamerens 'biografi'. Utan denna är enbart intresserad av
+                                        innehållet.
+                                    </p>
+
+                                    <h3>Lösning</h3>
+                                    <p class="content-text">
+                                        För att tackla detta problem har jag utvecklat ett Chrome-tillägg som
+                                        automatiskt aktiverar "bio-läge" när användare ansluter till en stream på
+                                        Twitch. Detta ger en renare och mer nedsänkande tittarupplevelse genom att
+                                        minska distraktioner och lägga större fokus på själva innehållet.
+                                    </p>
+
+                                    <h3>Hur den funkar</h3>
+                                    <p class="content-text">
+                                        Vid varje besök på www.twitch.tv söker tillägget efter ett specifikt knapp som
+                                        representerar växlingsknappen för "bioläge". När denna knapp identifieras
+                                        simulerar tillägget ett musklick på den, vilket aktiverar den nedsänkande
+                                        tittarupplevelsen. Detta sker direkt när man ansluter till sidan.
+
+                                        För att inte missa några förändringar övervakar tillägget ständigt sidans URL.
+                                        Om URLen skulle ändras, vilket ofta inträffar när man navigerar mellan olika
+                                        strömmar eller sidor inom Twitch.tv, initierar tillägget automatiskt en ny
+                                        sökning. Denna process säkerställer att "bioläge" aktiveras konsekvent, oavsett
+                                        hur ofta eller hur snabbt en användare navigerar inom plattformen.
+
+                                    </p>
+
+                                </div>
+                            </div>
+
                         </div>
                         <div class="content" onclick="expandContent(this)">
                             <div class="content-center">
@@ -308,7 +380,7 @@
                                             <span class="list-detail">Javascript</span>
                                         </li>
                                     </ul>
-
+                                    <h3>Introduktion</h3>
                                     <p class="content-text">Jag utvecklade detta tillägg som ett svar på bristerna
                                         jag
                                         märkte på svenskafans.com. <br>
@@ -364,7 +436,7 @@
                                             <span class="list-detail">Javascript, CSS</span>
                                         </li>
                                     </ul>
-
+                                    <h3>Introduktion</h3>
                                     <p class="content-text">Tillägg för att utöka tillgängligheten på
                                         svenskafans.com.
                                         <br>
@@ -406,7 +478,7 @@
                                             <span class="list-detail">Javascript, CSS</span>
                                         </li>
                                     </ul>
-
+                                    <h3>Introduktion</h3>
                                     <p class="content-text">
                                         Detta tillägg är designat för att optimera användarupplevelsen på
                                         blocket.se.
@@ -461,7 +533,7 @@
                                             <span class="list-detail">Javascript</span>
                                         </li>
                                     </ul>
-
+                                    <h3>Introduktion</h3>
                                     <p class="content-text">
                                         Github lanserade en ny funktion på sin webbplats som gör det möjligt att
                                         redigera och koda direkt från webbplatsen. Med detta tillägg kan användare
@@ -503,7 +575,7 @@
                                             <span class="list-detail">Javascript</span>
                                         </li>
                                     </ul>
-
+                                    <h3>Introduktion</h3>
                                     <p class="content-text">
                                         Hemsidan har en sessionstimer på 30 minuter. Om användaren inte är aktiv
                                         blir
@@ -545,7 +617,7 @@
                                             <span class="list-detail">Javascript</span>
                                         </li>
                                     </ul>
-
+                                    <h3>Introduktion</h3>
                                     <p class="content-text">Tillägg som adresserar det återkommande problemet med
                                         åldersverifieringsrutan på Steam. Istället för att manuellt hantera denna
                                         pop-up
@@ -779,6 +851,7 @@
                                             <span class="list-detail">Vue</span>
                                         </li>
                                     </ul>
+                                    <h3>Introduktion</h3>
                                     <p class="content-text">
                                         Tre i rad
                                     </p>

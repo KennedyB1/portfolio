@@ -108,7 +108,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  max-width: 90vw;
   /*
     Om man inte vill ha den centrerad
     */
@@ -321,7 +321,7 @@ h1 {
 }
 
 ::-webkit-scrollbar {
-  width: auto;
+  width: 8px;
 }
 
 /* Track */
@@ -332,6 +332,7 @@ h1 {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: gray;
+  border-radius: 12px; /* Add this */
 }
 
 /* Handle on hover */
