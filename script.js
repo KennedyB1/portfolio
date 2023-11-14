@@ -23,7 +23,7 @@ function initComparisons() {
         slider.style.top = '50%'
         slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
 
-
+        animateSliderOnLoad(slider, img, w);
 
         /*execute a function when the mouse button is pressed:*/
         slider.addEventListener("mousedown", slideReady);
@@ -72,10 +72,38 @@ function initComparisons() {
         function slide(x) {
             /*resize the image:*/
             img.style.width = x + "px";
-            /*position the slider:*/
-            slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+            /*position the slider: adjust here to ensure the full slider moves */
+            slider.style.left = x - (slider.offsetWidth / 2) + "px";
         }
     }
+
+    function animateSliderOnLoad(slider, img, width) {
+        let startPos = width / 2;
+        let endPos = startPos + 250; // adjust the distance as needed
+        let currentPosition = startPos;
+        let direction = 1; // 1 for right, -1 for left
+        let speed = 2; // adjust the speed as needed
+
+        function moveSlider() {
+            if ((direction === 1 && currentPosition >= endPos) || (direction === -1 && currentPosition <= startPos)) {
+                direction *= -1;
+            }
+            currentPosition += speed * direction;
+
+            // Adjusting the slider position
+            slider.style.left = currentPosition - (slider.offsetWidth / 2) + "px";
+
+            // Updating the width of the overlay image
+            img.style.width = currentPosition + "px";
+
+            if (currentPosition !== startPos) {
+                requestAnimationFrame(moveSlider);
+            }
+        }
+
+        requestAnimationFrame(moveSlider);
+    }
+
 }
 
 // Array of image file names
@@ -143,16 +171,10 @@ function closeExpandedContent() {
 
 
 
-///////////////////
-// const content = [{namn:"", språk:"", kategorie:"", bild:"", information:""}, {namn:"", språk:"", kategorie:"", bild:"", information:""}]
 
-
-
-
-/////////////////////////////
 
 function copyEmail() {
-    var email = 'vindahl.simon@gmail.com'; // Replace with your email address
+    var email = 'vindahl.simon@gmail.com';
     navigator.clipboard.writeText(email);
     var icon = document.createElement('span');
     icon.className = 'copied-icon';
